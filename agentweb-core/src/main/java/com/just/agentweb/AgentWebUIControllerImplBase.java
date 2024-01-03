@@ -69,7 +69,8 @@ public class AgentWebUIControllerImplBase extends AbsAgentWebUIController {
 
     @Override
     public void onMainFrameError(WebView view, int errorCode, String description, String failingUrl) {
-        getDelegate().onMainFrameError(view, errorCode, description, failingUrl);
+        // getDelegate().onMainFrameError(view, errorCode, description, failingUrl);
+        LogUtils.i(TAG, "AgentWebUIControllerImplBase onMainFrameError:" + mWebParentLayout);
     }
 
     @Override
