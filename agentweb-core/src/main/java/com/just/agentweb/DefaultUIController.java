@@ -300,11 +300,10 @@ public class DefaultUIController extends AbsAgentWebUIController {
 
 	@Override
 	public void onMainFrameError(WebView view, int errorCode, String description, String failingUrl) {
-
 		LogUtils.i(TAG, "mWebParentLayout onMainFrameError:" + mWebParentLayout);
-		if (mWebParentLayout != null) {
-			mWebParentLayout.showPageMainFrameError();
-		}
+		// if (mWebParentLayout != null) {
+		// 	mWebParentLayout.showPageMainFrameError();
+		// }
 	}
 
 	@Override
